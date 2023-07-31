@@ -35,7 +35,7 @@ namespace WebAPIdemo.Controllers
             return products;
         }
 
-        [HttpGet("GetSingleCategory/{id:string}")]
+        [HttpGet("GetSingleCategory/{id}")]
         [ProducesResponseType(202)]
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetSingleCategory(string id)
@@ -51,7 +51,7 @@ namespace WebAPIdemo.Controllers
             }
         }
 
-        [HttpGet("GetSingleProduct/{id:string}")]
+        [HttpGet("GetSingleProduct/{id}")]
         [ProducesResponseType(202)]
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetSingleProduct(string id)
@@ -67,7 +67,7 @@ namespace WebAPIdemo.Controllers
             }
         }
 
-        [HttpDelete("RemoveProductById/{id:string}")]
+        [HttpDelete("RemoveProductById/{id}")]
         [ProducesResponseType(202)]
         [ProducesResponseType(400)]
         public async Task<IActionResult> RemoveProductById(string id)
@@ -125,7 +125,7 @@ namespace WebAPIdemo.Controllers
 
         // Mock data operations 
         // These  will not use DI container
-        [HttpDelete("Mock/RemoveProductByIdMockOnly/{id:string}")]
+        [HttpDelete("Mock/RemoveProductByIdMockOnly/{id}")]
         [ProducesResponseType(202)]
         [ProducesResponseType(400)]
         public async Task<IActionResult> RemoveProductByIdMockOnly(string id)
