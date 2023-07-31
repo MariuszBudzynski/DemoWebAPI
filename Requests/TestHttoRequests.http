@@ -1,0 +1,8 @@
+#GET http://localhost:5009/api/WebAPIdemo/GetAllProducts
+
+#GET http://localhost:5009/api/WebAPIdemo/GetAllCategories
+
+#GET http://localhost:5009/api/WebAPIdemo/GetSingleProduct/WZ100
+
+#GET http://localhost:5009/api/WebAPIdemo/GetSingleCategory/AZ200
+
