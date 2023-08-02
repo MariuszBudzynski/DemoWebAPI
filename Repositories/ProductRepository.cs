@@ -58,9 +58,16 @@ namespace WebAPIdemo.Repositories
 
                 if (idSearch.IsNullOrEmpty())
                 {
-                    db.Products.Add(p);
-                    db.SaveChanges();
-                    elemntNumbers++;
+                    try
+                    {
+                        db.Products.Add(p);
+                        db.SaveChanges();
+                        elemntNumbers++;
+                    }
+                    catch
+                    {
+                        throw new BadHttpRequestException("JSON has incomplete data. The category must be relevant to the category in the database");
+                    }
                 }
 
             }
