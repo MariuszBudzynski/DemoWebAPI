@@ -4,7 +4,7 @@ The application was written for training purposes to expand knowledge about Web 
 * C#
 * .NET
 * MVC Pattern
-* Razor Pages
+* Web API
 * HTML
 * CSS
 * SQL Server
